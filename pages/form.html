@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1 class="header">About</h1>
+
+  <nav class="menu">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="articles.html" class="nav-link">Articles</a>
+    <a href="contacts.html" class="nav-link">Contacts</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="our_achivements.html" class="nav-link">Achivements</a>
+    <a href="form.html" class="nav-link-current">Form</a>
+  </nav>
+
+  <fieldset>
+    <legend>Basic information</legend>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name">
+      </div>
+
+      <div>
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" id="surname" placeholder="Surname">
+      </div>
+
+      <div>
+        <label for="file">Photo</label>
+        <input type="file" name="fille" id="file">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="example@mail.com">
+      </div>
+
+      <div>
+        <span>Gender:</span>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+      </div>
+
+
+      <div>
+        <label for="birth">Date of birth</label>
+        <input type="date" name="birth" id="birth">
+      </div>
+
+      <div>
+        <span>Choose what you like:</span><br>
+
+        <input type="checkbox" name="car" id="car">
+        <label for="car">Cars</label>
+
+        <input checked type="checkbox" name="moto" id="moto">
+        <label for="moto">Motorcycles</label>
+
+        <input type="checkbox" name="it" id="it">
+        <label for="it">IT learn</label>
+      </div>
+
+      <div>
+        <label for="abtu">About you</label><br>
+        <textarea cols="30" id="abtu" name="abtu" placeholder="Tell us something about you" rows="10"></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Register</button>
+      </div>
+      <div>
+        <button type="reset">Clear form</button>
+      </div>
+    </form>
+  </fieldset>
+
+  <footer>
+    <p>&#169; Here can be your company name</p>
+  </footer>
+
+</body>
+
+</html>
