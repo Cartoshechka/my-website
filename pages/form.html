@@ -18,13 +18,14 @@
     <a href="articles.html" class="nav-link">Articles</a>
     <a href="contacts.html" class="nav-link">Contacts</a>
     <a href="gallery.html" class="nav-link">Gallery</a>
-    <a href="our_achivements.html" class="nav-link">Achivements</a>
+    <a href="our-achivements.html" class="nav-link">Achievements</a>
     <a href="form.html" class="nav-link-current">Form</a>
   </nav>
 
-  <fieldset>
-    <legend>Basic information</legend>
-    <form>
+  <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+    <fieldset>
+      <legend>Basic information</legend>
+
       <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Name">
@@ -37,7 +38,7 @@
 
       <div>
         <label for="file">Photo</label>
-        <input type="file" name="fille" id="file">
+        <input type="file" name="file" id="file">
       </div>
 
       <div>
@@ -46,46 +47,83 @@
       </div>
 
       <div>
-        <span>Gender:</span>
-        <input type="radio" name="gender" id="male">
-        <label for="male">Male</label>
-
-        <input type="radio" name="gender" id="female">
-        <label for="female">Female</label>
-      </div>
-
-
-      <div>
         <label for="birth">Date of birth</label>
         <input type="date" name="birth" id="birth">
       </div>
+    </fieldset>
 
-      <div>
-        <span>Choose what you like:</span><br>
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" name="gender" id="male" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">Female</label>
+    </fieldset>
 
-        <input type="checkbox" name="car" id="car">
-        <label for="car">Cars</label>
+    <fieldset>
+      <legend>Select your country</legend>
+      <label for="country">Your country</label>
+      <select name="country" id="country" required>
+        <option value="" disabled selected>Select your country</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+        <option value="germany">Germany</option>
+        <option value="ukraine">Ukraine</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
 
-        <input checked type="checkbox" name="moto" id="moto">
-        <label for="moto">Motorcycles</label>
+    <fieldset>
+      <legend>Choose what you like</legend>
+      <ul>
+        <li>
+          Transport
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="interests" value="car"> Cars
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="interests" value="moto" checked> Motorcycles
+              </label>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Education
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="interests" value="it"> IT
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="interests" value="Mechanick">Mechanick
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </fieldset>
 
-        <input type="checkbox" name="it" id="it">
-        <label for="it">IT learn</label>
-      </div>
-
+    <fieldset>
       <div>
         <label for="abtu">About you</label><br>
         <textarea cols="30" id="abtu" name="abtu" placeholder="Tell us something about you" rows="10"></textarea>
       </div>
+    </fieldset>
 
-      <div>
-        <button type="submit">Register</button>
-      </div>
-      <div>
-        <button type="reset">Clear form</button>
-      </div>
-    </form>
-  </fieldset>
+    <div>
+      <button type="submit">Register</button>
+    </div>
+
+    <div>
+      <button type="reset">Clear form</button>
+    </div>
+
+  </form>
 
   <footer>
     <p>&#169; Here can be your company name</p>
