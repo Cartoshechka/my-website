@@ -22,4 +22,9 @@
 
 - В целом, данный проект представляет собой комплексное решение, включающее в себя все необходимые инструменты и подходы для успешного выполнения домашнего задания. Он может служить отличной основой для дальнейшего развития и внедрения новых идей, а также для обучения и совершенствования навыков программирования.
 
+## Технологии
+
+![HTML5](https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg)  
+![CSS3](https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg)
+
 ---
