@@ -97,8 +97,18 @@ body {
   color: #000;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .gallery-item {
   display: flex;
+  flex-direction: column;
   align-items: center; 
   margin-bottom: 20px;
 }
@@ -199,4 +209,85 @@ ol > li > ul > li {
 
 fieldset div > div {
   margin-bottom: 8px;
+}
+
+.container{
+   max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer{
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  font-size: 14px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a72;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #1c1c50;
+}
+
+fieldset > div {
+  margin-bottom: 15px;
+}
+
+.container div > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  max-width: 400px;
+}
+
+.container input[type="radio"],
+.container input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.container label {
+  white-space: normal;
+  overflow-wrap: break-word;
+  flex: 1;
 }
